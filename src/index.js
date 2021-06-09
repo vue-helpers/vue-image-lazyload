@@ -1,25 +1,25 @@
 import LazyLoad from './directives/lazy-load'
 
 export function install (Vue) {
-  Vue.directive('lazy-load', LazyLoad)
+	Vue.directive('lazy-load', LazyLoad)
 }
 
 export {
-  LazyLoad
+	LazyLoad,
 }
 
 const plugin = {
-  install
+	install,
 }
 
 export default plugin
 
 let GlobalVue = null
 if (typeof window !== 'undefined') {
-  GlobalVue = window.Vue
+	GlobalVue = window.Vue
 } else if (typeof global !== 'undefined') {
-  GlobalVue = global.Vue
+	GlobalVue = global.Vue
 }
 if (GlobalVue) {
-  GlobalVue.use(plugin)
+	GlobalVue.use(plugin)
 }
