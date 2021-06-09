@@ -1,6 +1,6 @@
 {
   "name": "@vue-helpers/vue-image-lazyload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple Vue.js plugin for lazy image load",
   "author": "Roman Beniukh",
   "license": "MIT",
@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "babel src/ -d dist",
-    "deploy": "npm publish"
+    "deploy": "npm publish --access public"
   },
   "publishConfig": {
     "access": "public"
