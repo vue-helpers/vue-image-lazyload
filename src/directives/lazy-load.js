@@ -39,7 +39,7 @@ export default {
 
     function handleMutation (mutations) {
       mutations.forEach(mutation => {
-        if (mutation.attributeName === 'data-src' && mutation.attributeName === 'data-srcset') {
+        if (mutation.attributeName === 'data-src' || mutation.attributeName === 'data-srcset') {
           loadImage()
         }
       })
