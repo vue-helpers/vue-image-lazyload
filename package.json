@@ -1,0 +1,40 @@
+{
+  "name": "@vue-helpers/vue-image-lazyload",
+  "version": "1.0.0",
+  "description": "Simple Vue.js plugin for lazy image load",
+  "author": "Roman Beniukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vue-helpers/vue-image-lazyload/issues"
+  },
+  "homepage": "https://github.com/vue-helpers/vue-image-lazyload#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-helpers/vue-image-lazyload.git"
+  },
+  "keywords": [
+    "vue-image-lazyload",
+    "vue",
+    "vuejs",
+    "lazyload",
+    "lazy load",
+    "lazy-load"
+  ],
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/plugin-proposal-private-methods": "^7.13.0",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^7.1.2",
+    "vue": "^2.1.6",
+    "webpack": "^3.5.5"
+  },
+  "scripts": {
+    "build": "babel src/ -d dist",
+    "deploy": "npm publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
